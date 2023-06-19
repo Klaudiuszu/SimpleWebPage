@@ -57,10 +57,11 @@
   font-weight: 900;
 }
 .services .services__icons .services__icons__el__info p {
+  font-family: "Caveat", cursive;
   opacity: 0.5;
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 10px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
