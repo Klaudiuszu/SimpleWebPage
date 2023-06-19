@@ -1,0 +1,105 @@
+.photos {
+  margin-top: 50px;
+  height: 750px;
+  width: 100%;
+}
+
+.photos__wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-gap: 30px;
+}
+
+.photos__wrapper__single {
+  display: grid;
+  place-items: center;
+}
+
+.png {
+  width: 400px;
+  position: relative;
+}
+
+.png img {
+  width: 100%;
+  height: 100%;
+}
+
+.png:hover .image__background {
+  position: absolute;
+  top: -10px;
+  display:grid;
+  left: -10px;
+  width: 400px;
+  height: 600px;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: screen;
+}
+
+.image__background__container__icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  
+  .image__background__container__icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    color: #f38381;
+    background-color: #f7dba0;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .first{
+    background-color: #f38381;
+    color: #f7dba0;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.png:hover .background1 {
+  background-image: linear-gradient(#f38381, #f7dba0), url('../../utilities/person1.jpg');
+}
+
+.png:hover .background2 {
+  background-image: linear-gradient(#f38381, #f7dba0), url('../../utilities/person2.jpg');
+}
+
+.png:hover .background3 {
+  background-image: linear-gradient(#f38381, #f7dba0), url('../../utilities/person3.jpg');
+}
+
+.image__background_color {
+  width: 400px;
+  height: 600px;
+}
+
+.image__background {
+  display: none;
+}
+
+a {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 10px;
+  font-style: italic;
+}

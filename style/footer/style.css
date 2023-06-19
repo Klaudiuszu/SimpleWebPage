@@ -1,0 +1,48 @@
+.footer {
+  width: 100%;
+}
+.footer .footer__line {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.1;
+}
+.footer .footer__wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  margin-top: 20px;
+}
+.footer .footer__wrapper__left {
+  padding: 10px;
+}
+.footer .footer__wrapper__left span {
+  color: #f38381;
+}
+.footer .footer__wrapper__right {
+  text-align: end;
+}
+.footer .footer__wrapper__right .email__input {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid rgb(192, 192, 192);
+  font-style: italic;
+}
+.footer .footer__wrapper__right .subscribe__button {
+  position: relative;
+  left: -6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #baedd5;
+  color: black;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+}
+.footer .footer__wrapper__right .subscribe__button:hover {
+  background-color: #f38381;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */
